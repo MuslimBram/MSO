@@ -1,0 +1,19 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent body scroll within the iframe */
+}
+
+/* 
+  Important for WordPress Embedding: 
+  This ensures that if the user touches the 3D canvas on mobile,
+  it rotates the model instead of scrolling the whole WordPress page.
+*/
+canvas {
+  touch-action: none;
+}
